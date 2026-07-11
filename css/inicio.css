@@ -1,0 +1,123 @@
+:root {
+    --total-banderas: 12;
+    /* Ajusta según el número de banderas */
+}
+
+body {
+    background-color: #0b0c10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor Principal (Marco Dorado Extendido) */
+.emblema-contenedor {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #1a365d 60%, #0f172a 100%);
+    border: 15px solid #d4af37;
+    /* Color Oro */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centro del Emblema (Mapa de América Latina) */
+.centro-mapa {
+    width: 65%;
+    height: 65%;
+    background: url('data:image/png;base64,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') no-repeat center;
+    background-size: contain;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+    z-index: 2;
+    border-radius: 50%;
+}
+
+/* Contenedor de la rueda de banderas */
+.rueda-banderas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cada elemento de bandera individual */
+.rueda-banderas li {
+    position: absolute;
+    top: 15px;
+    /* Distancia desde el borde superior del marco */
+    left: calc(50% - 25px);
+    /* Centrado horizontal (mitad del ancho del elemento) */
+    width: 50px;
+    height: 35px;
+    transform-origin: center 185px;
+    /* Punto de pivote hacia el centro del círculo (400px / 2 - top) */
+}
+
+/* Ajuste visual de las imágenes de las banderas */
+.rueda-banderas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Distribución Matemática Circular Automatizada */
+.rueda-banderas li:nth-child(1) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 0));
+}
+
+.rueda-banderas li:nth-child(2) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 1));
+}
+
+.rueda-banderas li:nth-child(3) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 2));
+}
+
+.rueda-banderas li:nth-child(4) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 3));
+}
+
+.rueda-banderas li:nth-child(5) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 4));
+}
+
+.rueda-banderas li:nth-child(6) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 5));
+}
+
+.rueda-banderas li:nth-child(7) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 6));
+}
+
+.rueda-banderas li:nth-child(8) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 7));
+}
+
+.rueda-banderas li:nth-child(9) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 8));
+}
+
+.rueda-banderas li:nth-child(10) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 9));
+}
+
+.rueda-banderas li:nth-child(11) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 10));
+}
+
+.rueda-banderas li:nth-child(12) {
+    transform: rotate(calc(360deg / var(--total-banderas) * 11));
+}
